@@ -21,6 +21,13 @@ public class Animal {
         this.name = name;
         System.out.println("This is " + type + ": " + this.name);
     }
+    
+    Animal(String name, House aHouse) {
+        this.name = name;
+        System.out.println("This is " + type + ": " + this.name 
+                 + " inside a " + aHouse.getType() + " called, " + aHouse.getName());
+    }
+            
 
     public String getName() {
         return name;
@@ -30,4 +37,7 @@ public class Animal {
         this.name = name;
     }
     
+    public String getType() {
+        return this.type;
+    }
 }

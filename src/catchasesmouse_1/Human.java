@@ -21,6 +21,12 @@ public class Human {
         this.name = name;
         System.out.println("This is " + type + ": " + this.name);
     }
+    
+    Human(String name, House aHouse) {
+        this.name = name;
+        System.out.println("This is " + type + ": " + this.name 
+                 + " inside a " + aHouse.getType() + " called, " + aHouse.getName());
+    }
 
     public String getName() {
         return name;
@@ -28,5 +34,9 @@ public class Human {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public String getType() {
+        return this.type;
     }
 }

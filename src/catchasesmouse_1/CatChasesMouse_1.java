@@ -16,12 +16,10 @@ public class CatChasesMouse_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        House myhouse = new House("Nick's House");
         
-        Human human = new Human();
+
+        House myHouse = new House("Nick's House");
         
-        
-        Animal cat = new Animal();
         
     }
     
