@@ -25,7 +25,7 @@ public class Animal {
     Animal(String name, House aHouse) {
         this.name = name;
         System.out.println("This is " + type + ": " + this.name 
-                 + " inside a " + aHouse.getType() + " called, " + aHouse.getName());
+                 + " inside a " + aHouse.getType() + " called, " + aHouse.getName() + " inside " + aHouse.getHousePart1().getName());
     }
             
 

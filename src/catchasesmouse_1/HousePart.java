@@ -9,23 +9,32 @@ package catchasesmouse_1;
  *
  * @author George.Pasparakis
  */
-public class Human {
-    private String type = "human";
+public class HousePart {
+    private String type = "house part";
     private String name;
 
-    Human() {
+    HousePart() {
         System.out.println("This is a " + type);
     }
     
-    Human(String name) {
+    HousePart(String name) {
         this.name = name;
         System.out.println("This is " + type + ": " + this.name);
     }
     
-    Human(String name, House aHouse) {
+    HousePart(String name, House aHouse) {
         this.name = name;
         System.out.println("This is " + type + ": " + this.name 
-                 + " inside a " + aHouse.getType() + " called, " + aHouse.getName() + " inside " + aHouse.getHousePart1().getName());
+                 + " inside a " + aHouse.getType() + " called, " + aHouse.getName());
+    }
+    
+     public void setaHumanAndAnAnimal(House aHouse) {
+        aHouse.setaHuman(new Human("Nikos", aHouse));
+        aHouse.setAnAnimal(new Animal("Annette", aHouse));
+    }
+
+    public String getType() {
+        return type;
     }
 
     public String getName() {
@@ -36,7 +45,5 @@ public class Human {
         this.name = name;
     }
     
-    public String getType() {
-        return this.type;
-    }
+    
 }
